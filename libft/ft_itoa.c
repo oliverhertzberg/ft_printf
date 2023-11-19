@@ -76,10 +76,8 @@ char	*ft_itoa(int n)
 {
 	int		sign;
 	char	*s;
-	int		i;
 
 	sign = 1;
-	i = 0;
 	if (n < 0)
 	{
 		if (n == -2147483648)

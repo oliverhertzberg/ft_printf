@@ -34,7 +34,7 @@ static int	printstuff(const char *s, va_list *ap)
 		return (printuint(va_arg(*ap, unsigned int)));
 	else if (*s == 'x' || *s == 'X')
 		return (printhex(va_arg(*ap, unsigned int), *s));
-	return (-1);
+	return (write(1, s, 1));
 }
 
 int	ft_printf(const	char *s, ...)

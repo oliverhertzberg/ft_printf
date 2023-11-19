@@ -33,10 +33,8 @@ static	char	*nsearch(size_t n_len, char *h, const char *needle, size_t len)
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t	i;
 	size_t	n_len;
 
-	i = 0;
 	n_len = 0;
 	if (needle[0] == '\0' || needle == (char *)haystack)
 		return ((char *)haystack);
